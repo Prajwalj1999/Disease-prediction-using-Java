@@ -2,6 +2,7 @@
 
 System Requirements:
 +I was using Netbeans 8.0.2, and I wish even you are using the same.
++Install Oracle SQL and set your username and password.
 +Assuming you are in C:\Users\prajwalj\Documents\NetBeansProjects i.e. you have NetBeansProjects folder inside Documents, Create a new project named pyscriptInJava inside NetBeansProjects folder.
 +Add the files 
               1.  box.java 
@@ -17,8 +18,5 @@ System Requirements:
   from https://sourceforge.net/projects/opencsv/  and https://www.oracle.com/technetwork/database/features/jdbc/jdbc-ucp-122-3110062.html respectively.
 +Add these 2 above .jar files in the Libraries section in NetBeans IDE.
 +Make necessary source path changes in box.java file to use the appropriate files.
++For accessing your database, use your username and password. 
 +To run the project, run the box.java file i.e. Shift+F6 on box.java
-
-
-Description:
-
