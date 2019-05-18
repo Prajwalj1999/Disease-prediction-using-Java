@@ -20,3 +20,14 @@ System Requirements:
 +Make necessary source path changes in box.java file to use the appropriate files.
 +For accessing your database, use your username and password. 
 +To run the project, run the box.java file i.e. Shift+F6 on box.java
++Make a relation "symdis" with following description.
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ TOPIC                                              VARCHAR2(30)
+ DESCRIPTION                                        VARCHAR2(500)
+ +Insert the necessary information with TOPIC containing the disease or symptom name, and DESCRIPTION containing description related to the particular disease or symtom.
+ +Make a relation "account" with following desciption.
+  Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ USERNAME                                           VARCHAR2(30)
+ PASSWORD                                           VARCHAR2(30)
