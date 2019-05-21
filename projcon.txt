@@ -1,0 +1,429 @@
+
+SQL*Plus: Release 11.2.0.2.0 Production on Mon Apr 8 20:27:38 2019
+
+Copyright (c) 1982, 2014, Oracle.  All rights reserved.
+
+SQL> connect
+Enter user-name: system
+Enter password:
+Connected.
+SQL> insert into symdis values('back_pain','Back pain is pain felt in the back. The back is divided into middle back pain (thoracic), lower back pain (lumbar) or coccydynia (tailbone or sacral pain) based on the segment affected.[1] Neck pain (cervical), which is considered an independent entity, can involve similar processes.');
+
+1 row created.
+
+SQL> insert into symdis values('constipation','Constipation is generally described as having fewer than three bowel movements a week. Chronic constipation may also cause excessive straining to have a bowel movement and other signs and symptoms.');
+
+1 row created.
+
+SQL> insert into symdis values('abdominal_pain','Most cases of abdominal pain are mild and have a variety of common causes, such as indigestion or muscle strain. Symptoms often resolve quickly on their own or with basic treatment.');
+
+1 row created.
+
+SQL> insert into symdis values('diarrhoea','Diarrhoea is when your bowel movements become loose or watery. The definition of diarrhoea is passing loose or watery bowel movements 3 or more times in a day ');
+
+1 row created.
+
+SQL> insert into symdis values('mild_fever','A fever is a temporary increase in your body temperature, often due to an illness.For an adult, a fever may be uncomfortable, but usually is not a cause for concern unless it reaches 103 F (39.4 C) or higher. For infants and toddlers, a slightly elevated temperature may indicate a serious infection');
+
+1 row created.
+
+SQL> insert into symdis values('yellow_urine','Urine color generally ranges from a pale-yellow color to deep amber. This coloring is primarily caused by the pigment urochrome, also known as urobilin.The pigments and chemical compounds in the foods you eat and the medications you take also alter the color of your urine.');
+
+1 row created.
+
+SQL> insert into symdis values('yellowing_of_eyes','It is often the result of a medical condition that causes a yellow-pigmented compound called bilirubin to build up in the blood. When heme, a component of red blood cells, is broken down in the spleen, liver, or bone marrow, the body releases bilirubin. There are many causes of jaundice.');
+
+1 row created.
+
+SQL> insert into symdis values('acute_liver_failure','Viral hepatitis is the most common cause of ALF worldwide and is the predominant cause of ALF in developing countries. Hepatitis A, B, and E infections have been implicated, as well as other rare viral causes including herpes simplex virus, Epstein-Barr virus, cytomegalovirus, and parvoviruses.');
+
+1 row created.
+
+SQL> insert into symdis values('fluid_overload','Hypervolemia, also known as fluid overload, is the medical condition where there is too much fluid in the blood. The opposite condition is hypovolemia, which is too little fluid volume in the blood.Treatment typically includes administration of diuretics and limit the intake of water, fluids, sodium, and salt.');
+
+1 row created.
+
+SQL> insert into symdis values('swelling_of_stomach','A distended stomach is a term usually used to refer to distension or swelling of the abdomen and not of the stomach itself. When the term is used in this manner, a number of different diseases and conditions can cause abdominal distension. ... Bloating is another term that is sometimes used to refer to a swollen belly.');
+
+1 row created.
+
+SQL> insert into symdis values('swelled_lymph_nodes','Swollen lymph nodes usually occur as a result of exposure to bacteria or viruses. When swollen lymph nodes are caused by an infection, this is known as lymphadenitis (lim-fad-uh-NIE-tis). ... Common areas where you might notice swollen lymph nodes include your neck, under your chin');
+
+1 row created.
+
+SQL> insert into symdis values('malaise','Malaise is a symptom that can occur with almost any health condition. It may start slowly or quickly, depending on the type of disease. Fatigue (feeling tired) occurs with malaise in many diseases. You can have a feeling of not having enough energy to do your usual activities.');
+
+1 row created.
+
+SQL> insert into symdis values('blurred_and_distorted_vision','Blurred vision refers to a lack of sharpness of vision resulting in the inability to see fine detail. Blurred vision may result from abnormalities such as nearsightedness, farsightedness, presbyopia, or astigmatism that can be improved with corrective lenses (eyeglasses) or it may signal the presence of eye disease.');
+
+1 row created.
+
+SQL> insert into symdis values('phlegm','is a liquid secreted by the mucous membranes of mammals. Its definition is limited to the mucus produced by the respiratory system, excluding that from the nasal passages, and particularly that which is expelled by coughing (sputum).');
+
+1 row created.
+
+SQL> insert into symdis values('throat_irritation','Allergies to pet dander, molds, dust and pollen can cause a sore throat. The problem may be complicated by postnasal drip, which can irritate and inflame the throat. Dryness. ... Breathing through your mouth - often because of chronic nasal congestion - also can cause a dry, sore throat');
+
+1 row created.
+
+SQL> insert into symdis values('redness_of_eyes','Red eyes usually are caused by allergy, eye fatigue, over-wearing contact lenses or common eye infections such as pink eye (conjunctivitis). However, redness of the eye sometimes can signal a more serious eye condition or disease, such as uveitis or glaucoma.');
+
+1 row created.
+
+SQL> insert into symdis values('sinus_pressure','Sinusitis is an inflammation or swelling of the tissue lining the sinuses. Healthy sinuses are filled with air. But when they become blocked and filled with fluid, germs can grow and cause an infection.');
+
+1 row created.
+
+SQL> insert into symdis values('runny_nose','A runny nose can be caused by anything that irritates or inflames the nasal tissues. Infections - such as the common cold and influenza - allergies and various irritants may all cause a runny nose.');
+
+1 row created.
+
+SQL> insert into symdis values('congestion','nfections - such as colds, flu or sinusitis - and allergies are frequent causes of nasal congestion and runny nose. Sometimes a congested and runny nose can be caused by irritants such as tobacco smoke and car exhaust. This condition is called nonallergic rhinitis or vasomotor rhinitis.');
+
+1 row created.
+
+SQL> insert into symdis values('chest_pain','This genetic disease causes the heart muscle to grow abnormally thick. ... Over time, heart failure may occur when the heart muscle becomes very thickened. This makes the heart work harder to pump blood. Along with chest pain, this type of cardiomyopathy may cause dizziness, lightheadedness, fainting, and other symptoms.');
+
+1 row created.
+
+SQL> insert into symdis values('weakness_in_limbs','Weakness is a lack of physical or muscle strength and the feeling that extra effort is required to move your arms, legs, or other muscles. If muscle weakness is the result of pain, the person may be able to make muscles work, but it will hurt.');
+
+1 row created.
+
+SQL> insert into symdis values('fast_heart_rate','Tachycardia is caused by something that disrupts the normal electrical impulses that control the rate of your heart's pumping action. Many things can cause or contribute to problems with the heart's electrical system. These include: Damage to heart tissues from heart disease.');
+insert into symdis values('fast_heart_rate','Tachycardia is caused by something that disrupts the normal electrical impulses that control the rate of your heart's pumping action. Many things can cause or contribute to problems with the heart's electrical system. These include: Damage to heart tissues from heart disease.')
+                                                                                                                                                                 *
+ERROR at line 1:
+ORA-00917: missing comma
+
+
+SQL> insert into symdis values('fast_heart_rate','Tachycardia is caused by something that disrupts the normal electrical impulses that control the rate of your heart pumping action. Many things can cause or contribute to problems with the heart's electrical system. These include: Damage to heart tissues from heart disease.');
+ERROR:
+ORA-01756: quoted string not properly terminated
+
+
+SQL> insert into symdis values('fast_heart_rate','Tachycardia is caused by something that disrupts the normal electrical impulses that control the rate of your heart pumping action. Many things can cause or contribute to problems with the heart electrical system. These include: Damage to heart tissues from heart disease.');
+
+1 row created.
+
+SQL> insert into symdis values('pain_during_bowel_movements','the painful bowel movements you're experiencing are much more likely to be due to a condition called an anal fissure. ... An anal fissure may develop when you pass hard or large stools during a bowel movement. Anal fissures typically cause pain and bleeding with bowel movements.');
+ERROR:
+ORA-01756: quoted string not properly terminated
+
+
+SQL> insert into symdis values('pain_during_bowel_movements','the painful bowel movements you are experiencing are much more likely to be due to a condition called an anal fissure. ... An anal fissure may develop when you pass hard or large stools during a bowel movement. Anal fissures typically cause pain and bleeding with bowel movements.');
+
+1 row created.
+
+SQL> insert into symdis values('pain_in_anal_region','Also known as piles, Hemorrhoids are very common diseases affecting three out of four adults from time to time. These are enlarged and distended veins in the anus and lower rectum similar to varicose veins. The blood vessels become swollen and irritated because of increased pressure.');
+
+1 row created.
+
+SQL> insert into symdis values('bloody_stool','Blood in the stool means there is bleeding somewhere in your digestive tract. ... Bleeding that happens higher up in the digestive tract may make stool appear black and tarry. Possible causes of blood in stool include: Diverticular disease.');
+
+1 row created.
+
+SQL> insert into symdis values('neck_pain','Cervical discs absorb shock between the bones. The bones, ligaments, and muscles of your neck support your head and allow for motion. Any abnormalities, inflammation, or injury can cause neck pain or stiffness. ... But in some cases, neck pain can indicate serious injury or illness and require a doctor's care.');
+ERROR:
+ORA-01756: quoted string not properly terminated
+
+
+SQL> insert into symdis values('neck_pain','Cervical discs absorb shock between the bones. The bones, ligaments, and muscles of your neck support your head and allow for motion. Any abnormalities, inflammation, or injury can cause neck pain or stiffness. ... But in some cases, neck pain can indicate serious injury or illness and require a doctor care.');
+
+1 row created.
+
+SQL> insert into symdis values('dizziness','Common causes of dizziness include a migraine, medications, and alcohol. It can also be caused by a problem in the inner ear, where balance is regulated. Dizziness is often a result of vertigo as well. The most common cause of vertigo and vertigo-related dizziness is benign positional vertigo (BPV).');
+
+1 row created.
+
+SQL> insert into symdis values('cramps','Overuse of a muscle, dehydration, muscle strain or simply holding a position for a prolonged period can cause a muscle cramp. ... Although most muscle cramps are harmless, some may be related to an underlying medical condition, such as: Inadequate blood supply.');
+
+1 row created.
+
+SQL> insert into symdis values('bruising','Causes of a Bruise. ... These bruises result from microscopic tears in blood vessels under the skin. Unexplained bruises that occur easily or for no apparent reason may indicate a bleeding disorder, especially if the bruising is accompanied by frequent nosebleeds or bleeding gums.');
+
+1 row created.
+
+SQL> insert into symdis values('obesity','Obesity is a complex disorder involving an excessive amount of body fat. ... It increases your risk of diseases and health problems, such as heart disease, diabetes and high blood pressure. Being extremely obese means you are especially likely to have health problems related to your weight');
+
+1 row created.
+
+SQL> insert into symdis values('swollen_legs','Leg swelling related to fluid buildup. Leg swelling caused by the retention of fluid in leg tissues is known as peripheral edema. It can be caused by a problem with the circulatory system, the lymphatic system or the kidneys. Leg swelling isn't always a sign of a heart or circulation problem');
+ERROR:
+ORA-01756: quoted string not properly terminated
+
+
+SQL> insert into symdis values('swollen_legs','Leg swelling related to fluid buildup. Leg swelling caused by the retention of fluid in leg tissues is known as peripheral edema. It can be caused by a problem with the circulatory system, the lymphatic system or the kidneys. Leg swelling is not always a sign of a heart or circulation problem');
+
+1 row created.
+
+SQL> insert into symdis values('swollen_blood_vessels','Vasculitis refers to a large group of diseases that cause inflammation of the blood vessels. The specific blood vessels affected include arteries, veins, and the tiniest of these known as capillaries. It can affect different parts of the body, leading to a wide range of symptoms.');
+
+1 row created.
+
+SQL> insert into symdis values('puffy_face_and_eyes','You may occasionally wake up with a swollen, puffy face. This could happen as a result of pressure being placed on your face while sleeping. However, a swollen, puffy face can also arise from a facial injury or indicate an underlying medical condition. ... In most cases, a medical professional should treat facial swelling.');
+
+1 row created.
+
+SQL> insert into symdis values('enlarged_thyroid','A number of factors can cause your thyroid gland to enlarge. Among the most common are: Iodine deficiency. ... Although a lack of dietary iodine is the main cause of goiters in many parts of the world, this is not often the case in countries where iodine is routinely added to table salt and other foods.');
+
+1 row created.
+
+SQL> insert into symdis values('brittle_nails','The term onychoschizia includes splitting, brittle, soft or thin nails. Onychoschizia is more common in women. Only very rarely are internal disease or vitamin deficiencies the reason (iron deficiency is the most common). ... The usual cause is repeated wetting and drying of the fingernails.');
+
+1 row created.
+
+SQL> insert into symdis values('swollen_extremeties','Swelling of the foot, ankle and leg can be severe enough to leave an indentation (pit) when you press on the area. This swelling (edema) is the result of excess fluid in your tissues - often caused by congestive heart failure or blockage in a leg vein.');
+
+1 row created.
+
+SQL> insert into symdis values('excessive_hunger','Frequent hunger may be a symptom of disease. ... It occurs as a result of extremely high blood sugar levels and is typically accompanied by other symptoms, including excessive thirst, weight loss and fatigue . Hyperthyroidism, a condition characterized by an overactive thyroid, is also associated with increased hunger.');
+
+1 row created.
+
+SQL> insert into symdis values('drying_and_tingling_lips','A common symptom is a numbness or a tingling sensation. All parts of the body, including the lips, can be affected. Peripheral neuropathy is not usually the cause of tingling lips. More often, temporary conditions affecting the lips are to blame, such as sensitive skin or cold weather.');
+
+1 row created.
+
+SQL> insert into symdis values('slurred_speech','Common causes of dysarthria include nervous system (neurological) disorders such as stroke, brain injury, brain tumors, and conditions that cause facial paralysis or tongue or throat muscle weakness.');
+
+1 row created.
+
+SQL> insert into symdis values('knee_pain','Knee pain can be caused by a sudden injury, an overuse injury, or by an underlying condition, such as arthritis. Treatment will vary depending on the cause. Symptoms of knee injury can include pain, swelling, and stiffness.')l
+  2  ;
+insert into symdis values('knee_pain','Knee pain can be caused by a sudden injury, an overuse injury, or by an underlying condition, such as arthritis. Treatment will vary depending on the cause. Symptoms of knee injury can include pain, swelling, and stiffness.')l
+                                                                                                                                                                                                                                                                        *
+ERROR at line 1:
+ORA-00933: SQL command not properly ended
+
+
+SQL> insert into symdis values('knee_pain','Knee pain can be caused by a sudden injury, an overuse injury, or by an underlying condition, such as arthritis. Treatment will vary depending on the cause. Symptoms of knee injury can include pain, swelling, and stiffness.');
+
+1 row created.
+
+SQL> insert into symdis values('hip_joint_pain','Problems within the hip joint itself tend to result in pain on the inside of your hip or your groin. Hip pain on the outside of your hip, upper thigh or outer buttock is usually caused by problems with muscles, ligaments, tendons and other soft tissues that surround your hip joint.');
+
+1 row created.
+
+SQL> insert into symdis values('muscle_weakness','True muscle weakness is a primary symptom of a variety of skeletal muscle diseases, including muscular dystrophy and inflammatory myopathy. It occurs in neuromuscular junction disorders, such as myasthenia gravis. Muscle weakness can also be caused by low levels of potassium and other electrolytes within muscle cells.');
+
+1 row created.
+
+SQL> insert into symdis values('stiff_neck','Common Causes of Stiff Neck. By far the most common cause of a stiff neck is a muscle strain or soft tissue sprain. ... Experiencing excessive stress or anxiety, which can lead to tension in the neck. Holding the neck in an abnormal position for a long period, such as cradling a phone between the neck and shoulder.');
+
+1 row created.
+
+SQL> insert into symdis values('swelling_joints','Joints are surrounded and cushioned by soft tissues. Swelling occurs when fluid accumulates in these tissues. Pain, stiffness, or both may accompany joint swelling. ... Joint swelling can be a symptom of a chronic condition, such as arthritis, or an injury that requires medical attention, such as a dislocation.');
+
+1 row created.
+
+SQL> insert into symdis values('weakness_of_one_body_side','The most common cause of hemiparesis and hemiplegia is stroke. ... Hemiplegia is common when the stroke affects the corticospinal tract. Other causes of hemiplegia include spinal cord injury, specifically Brown-Séquard syndrome, traumatic brain injury, or disease affecting the brain.');
+
+1 row created.
+
+SQL> insert into symdis values('unsteadiness','Unsteadiness (disequilibrium) or loss of balance when standing or walking are often experienced along with vertigo and other types of dizziness. The causes include: ... Neurological disorders such as Parkinson's disease, ataxia, spinal cord disorders, and other chronic diseases increase risk for balance problems.');
+ERROR:
+ORA-01756: quoted string not properly terminated
+
+
+SQL> insert into symdis values('unsteadiness','Unsteadiness (disequilibrium) or loss of balance when standing or walking are often experienced along with vertigo and other types of dizziness. The causes include: ... Neurological disorders such as Parkinson disease, ataxia, spinal cord disorders, and other chronic diseases increase risk for balance problems.');
+
+1 row created.
+
+SQL> insert into symdis values('loss_of_smell','Nasal congestion from a cold, allergy, sinus infection, or poor air quality is the most common cause of anosmia. Other anosmia causes include: ... Injury to the nose and smell nerves from surgery or head trauma. Exposure to toxic chemicals, such as pesticides or solvents.');
+
+1 row created.
+
+SQL> insert into symdis values('bladder_discomfort','As the bladder empties during urination, the muscles contract to squeeze the urine out through the urethra. Several different bladder problems can cause pain. The three most common causes of bladder pain are interstitial cystitis, urinary tract infection, and bladder cancer.');
+
+1 row created.
+
+SQL> insert into symdis values('foul_smell_of urine','Urinary tract infections - often called UTIs - commonly cause urine to smell strong. A strong urge to urinate and a burning sensation upon urination are the most common symptoms of a UTI. Bacteria in your urine cause urinary tract infections.');
+
+1 row created.
+
+SQL> insert into symdis values('continuous_feel_of_urine','Frequent urination can also develop as a habit. However, it can be a sign of kidney or ureter problems, urinary bladder problems, or another medical condition, such as diabetes mellitus, diabetes insipidus, pregnancy, or prostate gland problems.');
+
+1 row created.
+
+SQL> insert into symdis values('passage_of_gases','Gas collects in two main ways. Swallowing air while you eat or drink can cause oxygen and nitrogen to collect in the digestive tract. Second, as you digest food, digestive gases such as hydrogen, methane, and carbon dioxide collect.');
+
+1 row created.
+
+SQL> insert into symdis values('internal_itching','Pruritus is an unpleasant sensation, often accompanied by scratching. It may present due to a number of cutaneous diseases or internal disorders. Pruritus may be caused by some chemical substances as histamine, prostaglandins, proteases and substance P.');
+
+1 row created.
+
+SQL> insert into symdis values('depression','Depression can be normal, and is only an indicator of underlying disease when feelings become excessive, all-consuming, and interfere with daily living.');
+
+1 row created.
+
+SQL> insert into symdis values('irritability','Irritability is a feeling of agitation. When you're irritable, you become frustrated or upset easily. You might experience it in response to stressful situations. It may also be a symptom of a mental or physical health condition.');
+ERROR:
+ORA-01756: quoted string not properly terminated
+
+
+SQL> insert into symdis values('irritability','Irritability is a feeling of agitation. When you are irritable, you become frustrated or upset easily. You might experience it in response to stressful situations. It may also be a symptom of a mental or physical health condition.');
+
+1 row created.
+
+SQL> insert into symdis values('muscle_pain','he medical term for muscle pain is myalgia. ... Muscle pain due to injury or overuse is most commonly localized to one area. Depending upon the cause, muscle pain can be mild or severe and debilitating. Muscle pain is the hallmark symptom of some chronic conditions like fibromyalgia');
+
+1 row created.
+
+SQL> insert into symdis values('altered_sensorium','The common causes of altered sensorium in an immunocompetent adult in our geographical region are stroke, sepsis, cerebral malaria, tubercular meningitis, bacterial meningitis, meningoencephalitis, hepatic encephalopathy, uraemic encephalopathy and other metabolic encephalopathies like hypoglycaemia and hyponatraemia.');
+
+1 row created.
+
+SQL> insert into symdis values('red_spots_over_body','An autoimmune condition occurs when an individual immune system begins to attack healthy tissue. There are many autoimmune diseases, some of which can produce rashes.');
+
+1 row created.
+
+SQL> insert into symdis values('belly_pain','Abdominal (belly) pain is pain or discomfort that is felt in the part of the trunk below the ribs and above the pelvis. It comes from organs within the abdomen or organs adjacent to the belly. It is caused by inflammation, distention of an organ, or by loss of the blood supply to an organ.');
+
+1 row created.
+
+SQL> insert into symdis values('abnormal_menstruation','Irregular periods can sometimes indicate a health problem, and some of these can lead to further problems, such as fertility issues. Polycystic ovarian syndrome (PCOS) is a condition in which a number of small, fluid-filled sacs known as cysts develop in the ovaries. ... A thyroid disorder can cause irregular periods.');
+
+1 row created.
+
+SQL> insert into symdis values('dischromic _patches','Dyschromia is a condition marked by an alteration of color on the skin, hair or nails. ... Hypopigmentation and hyperpigmentation are used to describe light or dark patches on the skin. Melasma is often a diagnosis of dark patches, whereas Vitiligo typically is a diagnosis of light patches.');
+
+1 row created.
+
+SQL> insert into symdis values('watering_from_eyes','Tear over-secretion is usually caused by irritation or inflammation of the surface of the eye. This can occur for a number of reasons, including eyelash and eyelid problems or allergies. Oddly, a dry eye problem can sometimes cause watery eyes, because the eye produces excess tears to combat the irritation and dryness.');
+
+1 row created.
+
+SQL> insert into symdis values('increased_appetite','In some cases, an increase in appetite can be a sign of an abnormal condition, such as some endocrinologic conditions, including diabetes, hyperthyroidism, and Graves' disease. Increased appetite may also be seen in certain emotional or psychiatric conditions, as well as a response to stress, anxiety, or depression.');
+ERROR:
+ORA-01756: quoted string not properly terminated
+
+
+SQL> insert into symdis values('increased_appetite','In some cases, an increase in appetite can be a sign of an abnormal condition, such as some endocrinologic conditions, including diabetes, hyperthyroidism, and Graves disease. Increased appetite may also be seen in certain emotional or psychiatric conditions, as well as a response to stress, anxiety, or depression.');
+
+1 row created.
+
+SQL> insert into symdis values('polyuria','The most common cause of polyuria in both adults and children is uncontrolled diabetes mellitus, which causes osmotic diuresis, when glucose levels are so high that glucose is excreted in the urine. Water follows the glucose concentration passively, leading to abnormally high urine output.');
+
+1 row created.
+
+SQL> insert into symdis values('family_history','A family medical history is a record of health information about a person and his or her close relatives. ... A family history also can provide information about the risk of rarer conditions caused by mutations in a single gene, such as cystic fibrosis and sickle cell disease.');
+
+1 row created.
+
+SQL> insert into symdis values('mucoid_sputum','Bronchitis is an infection of the lung's main airways, the bronchi, which become inflamed and produce extra mucus. People with this condition may cough up yellow-grey or greenish sputum');
+ERROR:
+ORA-01756: quoted string not properly terminated
+
+
+SQL> insert into symdis values('mucoid_sputum','Bronchitis is an infection of the lung main airways, the bronchi, which become inflamed and produce extra mucus. People with this condition may cough up yellow-grey or greenish sputum');
+
+1 row created.
+
+SQL> insert into symdis values('rusty_sputum','Rust colored - usually caused by pneumococcal bacteria (in pneumonia), pulmonary embolism, lung cancer or pulmonary tuberculosis. ... The green color is caused by degenerating neutrophil verdoperoxidase.');
+
+1 row created.
+
+SQL> insert into symdis values('lack_of_concentration','Tiredness and emotional stress can cause concentration problems in most people. ... Rare conditions that affect the brain and some emotional problems as well as endocrinologic disturbances can also influence an individual's cognitive functions and thus impair concentration.');
+ERROR:
+ORA-01756: quoted string not properly terminated
+
+
+SQL> insert into symdis values('lack_of_concentration','Tiredness and emotional stress can cause concentration problems in most people. ... Rare conditions that affect the brain and some emotional problems as well as endocrinologic disturbances can also influence an individual cognitive functions and thus impair concentration.');
+
+1 row created.
+
+SQL> insert into symdis values('visual_disturbances','An ocular migraine is a rare condition characterized by temporary vision loss or even temporary blindness in one eye. Ocular migraines are thought to be caused by reduced blood flow or spasms of blood vessels in the retina or behind the eye.');
+
+1 row created.
+
+SQL> insert into symdis values('receiving_blood_transfusion','You may need a blood transfusion if you have: A severe infection or liver disease that stops your body from properly making blood or some parts of blood. An illness that causes anemia, such as kidney disease or cancer. Medicines or radiation used to treat a medical condition also can cause anemia.');
+
+1 row created.
+
+SQL> insert into symdis values('receiving_unsterile_injections','A needle is used to inject the vaccine into the muscle. The appropriate site for an intramuscular injection for those under 2 years of age is the vastus lateralis muscle. The deltoid muscle over the triceps area of the upper arm is preferred for persons 3 years of age and older.');
+
+1 row created.
+
+SQL> insert into symdis values('coma','Traumatic brain injuries, often caused by traffic collisions or acts of violence, are common causes of comas. Stroke. Reduced or interrupted blood supply to the brain (stroke), which may be caused by blocked arteries or a burst blood vessel, can result in a coma.');
+
+1 row created.
+
+SQL> insert into symdis values('stomach_bleeding','GI bleeding is not a disease, but a symptom of a disease. There are many possible causes of GI bleeding, including hemorrhoids, peptic ulcers, tears or inflammation in the esophagus, diverticulosis and diverticulitis, ulcerative colitis and Crohn's disease, colonic polyps, or cancer in the colon, stomach or esophagus.');
+ERROR:
+ORA-01756: quoted string not properly terminated
+
+
+SQL> insert into symdis values('stomach_bleeding','GI bleeding is not a disease, but a symptom of a disease. There are many possible causes of GI bleeding, including hemorrhoids, peptic ulcers, tears or inflammation in the esophagus, diverticulosis and diverticulitis, ulcerative colitis and Crohn disease, colonic polyps, or cancer in the colon, stomach or esophagus.');
+
+1 row created.
+
+SQL> insert into symdis values('distention_of_abdomen','Abdominal distension occurs when substances accumulate in the abdomen causing its expansion. Eg. Constipation It is typically a symptom of an underlying disease or dysfunction in the body, rather than an illness in its own right. People suffering from this condition often describe it as "feeling bloated".');
+
+1 row created.
+
+SQL> insert into symdis values('fluid_overload','When they retain salt, they increase the body's total sodium content, which increases your fluid content. The most common causes of hypervolemia include: heart failure, specifically of the right ventricle. cirrhosis, often caused by excess alcohol consumption or hepatitis.');
+ERROR:
+ORA-01756: quoted string not properly terminated
+
+
+SQL> insert into symdis values('fluid_overload','When they retain salt, they increase the body total sodium content, which increases your fluid content. The most common causes of hypervolemia include: heart failure, specifically of the right ventricle. cirrhosis, often caused by excess alcohol consumption or hepatitis.');
+
+1 row created.
+
+SQL> insert into symdis values('blood_in_sputum','Bloody sputum is also referred to as hemoptysis. Causes of bloody sputum include lung infection with pneumonia, bronchitis, tuberculosis, parasites (hookworm), cystic fibrosis, nosebleed (epistaxis), pulmonary edema, pulmonary embolism, chest trauma, mitral stenosis, lung cancer, and Goodpasture syndrome');
+
+1 row created.
+
+SQL> insert into symdis values('prominent_veins_on_calf','Varicose veins are tortuous, widened veins in the subcutaneous tissues of the legs and are often easily visible. Their valves are usually incompetent so that reflux of blood occurs, and the resulting venous hypertension can cause symptoms.');
+
+1 row created.
+
+SQL> insert into symdis values('palpitations','Heart palpitations (pal-pih-TAY-shuns) are the feelings of having a fast-beating, fluttering or pounding heart. Stress, exercise, medication or, rarely, a medical condition can trigger them. Although heart palpitations can be worrisome, they're usually harmless.');
+ERROR:
+ORA-01756: quoted string not properly terminated
+
+
+SQL> insert into symdis values('palpitations','Heart palpitations (pal-pih-TAY-shuns) are the feelings of having a fast-beating, fluttering or pounding heart. Stress, exercise, medication or, rarely, a medical condition can trigger them. Although heart palpitations can be worrisome, they are usually harmless.');
+
+1 row created.
+
+SQL> insert into symdis values('painful_walking','Walking abnormalities can affect the muscles, bones, or nerves of the legs. Abnormalities may be present in the entire leg or in certain parts of the leg, such as the knee or ankle. Problems with the foot may also result in walking abnormalities. These can be temporary or long-term conditions, depending on their cause.');
+
+1 row created.
+
+SQL> insert into symdis values('pus_filled_pimples','Acne develops when the pores of your skin become clogged with oil and dead skin cells. This blockage causes patches of skin to bulge, resulting in a pustule. Pustules usually contain pus due to an infection of the pore cavity. ... This condition is known as cystic acne.');
+
+1 row created.
+
+SQL> insert into symdis values('blackheads','Normally, hair grows from hair follicles in the pores, and the sebum-producing sebaceous glands lie underneath. When these pores are plugged, the dead skin cells in the open pore react with oxygen in the air and turn black, forming a blackhead.');
+
+1 row created.
+
+SQL> insert into symdis values('skin_peeling','Skin peeling can also result from a disease or condition, which may start someplace other than your skin. This type of skin peeling is often accompanied by itching. Conditions that may cause skin peeling include: ... Immune system disorders.');
+
+1 row created.
+
+SQL> insert into symdis values('small_dents_in_nails','Causes and related conditions. Nail pitting is often a sign of another condition that can include: psoriasis, which causes skin inflammation. eczema, a long-term skin condition that makes the skin red, itchy, and cracked.');
+
+1 row created.
+
+SQL> insert into symdis values('inflammatory_nails','Splinter haemorrhages of the nail. These are thin lines of blood running along the nail bed. Causes include injury, severe anaemia, infective endocarditis (inflammation of the inner tissue of the heart) and certain diseases such as rheumatoid arthritis.');
+
+1 row created.
+
+SQL> insert into symdis values('blister','A blister is a pocket of fluid between the upper layers of skin. The most common causes are friction, freezing, burning, infection, and chemical burns. Blisters are also a symptom of some diseases. ... Blisters can be filled with serum, plasma, blood or pus depending on how and where they are formed.');
+
+1 row created.
+
+SQL> insert into symdis values('red_sore_around_nose','Classic signs and symptoms of impetigo involve red sores that quickly rupture, ooze for a few days and then form a yellowish-brown crust. The sores usually occur around the nose and mouth but can be spread to other areas of the body by fingers, clothing and towels. Itching and soreness are generally mild.');
+
+1 row created.
+
+SQL> insert into symdis values('yellow_crust_ooze','The blisters soon burst and ooze either fluid or pus, leaving thick, yellowish-brownish golden crusts. As the crusts dry, they leave a red mark which usually heals without scarring. Although the sores are not painful, they may be very itchy.');
+
+1 row created.
+
+SQL>

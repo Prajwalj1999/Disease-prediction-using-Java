@@ -1,0 +1,253 @@
+
+SQL*Plus: Release 11.2.0.2.0 Production on Sat Apr 6 20:00:20 2019
+
+Copyright (c) 1982, 2014, Oracle.  All rights reserved.
+
+SQL> connect
+Enter user-name: system
+Enter password:
+Connected.
+SQL> create table symdis(topic varchar(30),description varchar(500));
+
+Table created.
+
+SQL> insert into symdis values('Fungal infection','A fungus is a primitive organism. Mushrooms, mold and mildew are examples. Fungi live in air, in soil, on plants and in water. As a result, fungal infections often start in the lungs or on the skin. You are more likely to get a fungal infection if you have a weakened immune system or take antibiotics');
+
+1 row created.
+
+SQL> insert into symdis values('Allergy','Allergy. ... Allergies, also known as allergic diseases, are a number of conditions caused by hypersensitivity of the immune system to typically harmless substances in the environment. These diseases include hay fever, food allergies, atopic dermatitis, allergic asthma, and anaphylaxis.);
+ERROR:
+ORA-01756: quoted string not properly terminated
+
+
+SQL> insert into symdis values('Allergy','Allergy. ... Allergies, also known as allergic diseases, are a number of conditions caused by hypersensitivity of the immune system to typically harmless substances in the environment. These diseases include hay fever, food allergies, atopic dermatitis, allergic asthma, and anaphylaxis.');
+
+1 row created.
+
+SQL> insert into symdis values('GERD','Gastroesophageal reflux disease, or GERD, is a digestive disorder that affects the lower esophageal sphincter (LES), the ring of muscle between the esophagus and stomach. Many people, including pregnant women, suffer from heartburn or acid indigestion caused by GERD.');
+
+1 row created.
+
+SQL> insert into symdis values('Chronic cholestasis','Chronic cholestatic diseases, whether occurring in infancy, childhood or adulthood, are characterized by defective bile acid transport from the liver to the intestine, which is caused by primary damage to the biliary epithelium in most cases');
+
+1 row created.
+
+SQL> insert into symdis values('Drug Reaction','A drug allergy is an allergy to a drug, most commonly a medication, and is a form of adverse drug reaction. Medical attention should be sought immediately if an allergic reaction is suspected.
+  2
+SQL> An allergic reaction will not occur on the first exposure to a substance. The first exposure allows the body to create antibodies and memory lymphocyte cells for the antigen. However, drugs often contain many different substances, including dyes, which could cause allergic reactions. This can cause an allergic reaction on the first administration of a drug. ');
+SP2-0734: unknown command beginning "An allergi..." - rest of line ignored.
+SQL> insert into symdis values('Drug Reaction','A drug allergy is an allergy to a drug, most commonly a medication, and is a form of adverse drug reaction. Medical attention should be sought immediately if an allergic reaction is suspected. An allergic reaction will not occur on the first exposure to a substance. The first exposure allows the body to create antibodies and memory lymphocyte cells for the antigen. However, drugs often contain many different substances, including dyes, which could cause allergic reactions. This can cause an allergic reaction on the first administration of a drug. ');
+insert into symdis values('Drug Reaction','A drug allergy is an allergy to a drug, most commonly a medication, and is a form of adverse drug reaction. Medical attention should be sought immediately if an allergic reaction is suspected. An allergic reaction will not occur on the first exposure to a substance. The first exposure allows the body to create antibodies and memory lymphocyte cells for the antigen. However, drugs often contain many different substances, including dyes, which could cause allergic reactions. This can cause an allergic reaction on the first administration of a drug. ')
+                                          *
+ERROR at line 1:
+ORA-12899: value too large for column "SYSTEM"."SYMDIS"."DESCRIPTION" (actual:
+553, maximum: 500)
+
+
+SQL> insert into symdis values('Drug Reaction','A drug allergy is an allergy to a drug, most commonly a medication, and is a form of adverse drug reaction. Medical attention should be sought immediately if an allergic reaction is suspected. An allergic reaction will not occur on the first exposure to a substance. However, drugs often contain many different substances, including dyes, which could cause allergic reactions. This can cause an allergic reaction on the first administration of a drug. ');
+
+1 row created.
+
+SQL> insert into symdis values('Peptic ulcer diseae','Peptic ulcers are open sores that develop on the inside lining of your stomach and the upper portion of your small intestine. The most common symptom of a peptic ulcer is stomach pain. Peptic ulcers include: Gastric ulcers that occur on the inside of the stomach.');
+
+1 row created.
+
+SQL> insert into symdis values('AIDS','Acquired immunodeficiency syndrome (AIDS) is a chronic, potentially life-threatening condition caused by the human immunodeficiency virus (HIV). By damaging your immune system, HIV interferes with your body's ability to fight the organisms that cause disease. HIV is a sexually transmitted infection (STI).');
+ERROR:
+ORA-01756: quoted string not properly terminated
+
+
+SQL> insert into symdis values('AIDS','Acquired immunodeficiency syndrome (AIDS) is a chronic, potentially life-threatening condition caused by the human immunodeficiency virus (HIV). By damaging your immune system, HIV interferes with your body ability to fight the organisms that cause disease. HIV is a sexually transmitted infection (STI).');
+
+1 row created.
+
+SQL> insert into symdis values('Diabetes','Diabetes is a disease that affects your body’s ability to produce or use insulin. Insulin is a hormone. When your body turns the food you eat into energy (also called sugar or glucose), insulin is released to help transport this energy to the cells. Insulin acts as a "key." Its chemical message tells the cell to open and receive glucose. If you produce little or no insulin, or are insulin resistant, too much sugar remains in your blood');
+ERROR:
+ORA-01756: quoted string not properly terminated
+
+
+SQL> insert into symdis values('Diabetes','Diabetes is a disease that affects your body ability to produce or use insulin. Insulin is a hormone. When your body turns the food you eat into energy (also called sugar or glucose), insulin is released to help transport this energy to the cells. Insulin acts as a "key." Its chemical message tells the cell to open and receive glucose. If you produce little or no insulin, or are insulin resistant, too much sugar remains in your blood');
+
+1 row created.
+
+SQL> insert into symdis values('Gastroenteritis','Gastroenteritis, also known as infectious diarrhea, is inflammation of the gastrointestinal tract-the stomach and small intestine. ... Gastroenteritis is usually caused by viruses. However, bacteria, parasites, and fungus can also cause gastroenteritis. In children, rotavirus is the most common cause of severe disease.');
+
+1 row created.
+
+SQL> insert into symdis values('Bronchial Asthma',' a chronic inflammatory disease of the airways that causes periodic "attacks" of coughing, wheezing, shortness of breath, and chest tightness.');
+
+1 row created.
+
+SQL> insert into symdis values('Hypertension','Hypertensive heart disease refers to heart conditions caused by high blood pressure.
+  2
+SQL> The heart working under increased pressure causes some different heart disorders. Hypertensive heart disease includes heart failure, thickening of the heart muscle, coronary artery disease, and other conditions.
+SP2-0734: unknown command beginning "The heart ..." - rest of line ignored.
+SQL>
+SQL> insert into symdis values('Hypertension','Hypertensive heart disease refers to heart conditions caused by high blood pressure.
+  2  ;
+ERROR:
+ORA-01756: quoted string not properly terminated
+
+
+SQL> insert into symdis values('Hypertension','Hypertensive heart disease refers to heart conditions caused by high blood pressure.The heart working under increased pressure causes some different heart disorders. Hypertensive heart disease includes heart failure, thickening of the heart muscle, coronary artery disease, and other conditions.Hypertensive heart disease can cause serious health problems. It’s the leading cause of death from high blood pressure.');
+ERROR:
+ORA-01756: quoted string not properly terminated
+
+
+SQL> insert into symdis values('Hypertension','Hypertensive heart disease refers to heart conditions caused by high blood pressure.The heart working under increased pressure causes some different heart disorders. Hypertensive heart disease includes heart failure, thickening of the heart muscle, coronary artery disease, and other conditions.Hypertensive heart disease can cause serious health problems. It is the leading cause of death from high blood pressure.');
+
+1 row created.
+
+SQL> insert into symdis values(' Migraine','A migraine can cause severe throbbing pain or a pulsing sensation, usually on just one side of the head. It's often accompanied by nausea, vomiting, and extreme sensitivity to light and sound. Migraine attacks can cause significant pain for hours to days and can be so severe that the pain is disabling.');
+ERROR:
+ORA-01756: quoted string not properly terminated
+
+
+SQL> insert into symdis values(' Migraine','A migraine can cause severe throbbing pain or a pulsing sensation, usually on just one side of the head. It is often accompanied by nausea, vomiting, and extreme sensitivity to light and sound. Migraine attacks can cause significant pain for hours to days and can be so severe that the pain is disabling.');
+
+1 row created.
+
+SQL> insert into symdis values('Cervical spondylosis','Cervical spondylosis is a general term for age-related wear and tear affecting the spinal disks in your neck. As the disks dehydrate and shrink, signs of osteoarthritis develop, including bony projections along the edges of bones (bone spurs).');
+
+1 row created.
+
+SQL> insert into symdis values('Paralysis (brain hemorrhage)','Intracerebral hemorrhage (ICH) is when blood suddenly bursts into brain tissue, causing damage to your brain. Symptoms usually appear suddenly during ICH. They include headache, weakness, confusion, and paralysis, particularly on one side of your body.');
+
+1 row created.
+
+SQL> insert into symdis values('Jaundice','Yellow staining of the skin and sclerae (the whites of the eyes) by abnormally high blood levels of the bile pigment bilirubin. The yellowing extends to other tissues and body fluids.');
+
+1 row created.
+
+SQL> insert into symdis values('Malaria',' An infectious disease caused by protozoan parasites from the Plasmodium family that can be transmitted by the bite of the Anopheles mosquito or by a contaminated needle or transfusion.');
+
+1 row created.
+
+SQL> insert into symdis values('Chicken pox','Chickenpox is a highly contagious disease caused by the varicella-zoster virus (VZV). It can cause an itchy, blister-like rash. The rash first appears on the chest, back, and face, and then spreads over the entire body, causing itchy blisters.');
+
+1 row created.
+
+SQL> insert into symdis values('Dengue','Dengue fever is a mosquito-borne tropical disease caused by the dengue virus. Symptoms typically begin three to fourteen days after infection. This may include a high fever, headache, vomiting, muscle and joint pains, and a characteristic skin rash.');
+
+1 row created.
+
+SQL> insert into symdis values('Typhoid',' An acute illness characterized by fever caused by infection with the bacterium Salmonella typhi. Typhoid fever has an insidious onset, with fever, headache, constipation, malaise, chills, and muscle pain.');
+
+1 row created.
+
+SQL> insert into symdis values('hepatitis A','Inflammation of the liver caused by the hepatitis A virus (HAV). HAV is usually transmitted from person to person by food or drink that has been contaminated with the stool of a person with hepatitis A.');
+
+1 row created.
+
+SQL> insert into symdis values('Hepatitis B','Hepatitis B is an infection of your liver. It can cause scarring of the organ, liver failure, and cancer. It can be fatal if it is not treated. It's spread when people come in contact with the blood, open sores, or body fluids of someone who has the hepatitis B virus.');
+ERROR:
+ORA-01756: quoted string not properly terminated
+
+
+SQL> insert into symdis values('Hepatitis B','Hepatitis B is an infection of your liver. It can cause scarring of the organ, liver failure, and cancer. It can be fatal if it is not treated. It is spread when people come in contact with the blood, open sores, or body fluids of someone who has the hepatitis B virus.');
+
+1 row created.
+
+SQL> insert into symdis values('Hepatitis C','Inflammation of the liver due to the hepatitis C virus (HCV), which is usually spread via blood transfusion (rare), hemodialysis, and needle sticks. The damage hepatitis C does to the liver can lead to cirrhosis and its complications as well as cancer. Transmission of the virus by sexual contact is rare.');
+
+1 row created.
+
+SQL> insert into symdis values('Hepatitis D',' Liver inflammation due to the hepatitis D virus (HDV), which causes disease only in patients who additionally have the hepatitis B virus. Transmission occurs via infected blood, needles, or sexual contact with an infected person.');
+
+1 row created.
+
+SQL> insert into symdis values('Hepatitis E','A rare form of liver inflammation caused by infection with the hepatitis E virus (HEV). It is transmitted via food or drink handled by an infected person or through infected water supplies in areas where fecal matter may get into the water.');
+
+1 row created.
+
+SQL> insert into symdis values('Alcoholic hepatitis','Alcoholic hepatitis is inflammation of the liver caused by drinking alcohol. Not all heavy drinkers develop alcoholic hepatitis, and the disease can occur in people who drink only moderately.');
+
+1 row created.
+
+SQL> insert into symdis values('Tuberculosis','Tuberculosis (TB) is an infectious disease usually caused by Mycobacterium tuberculosis (MTB) bacteria. Tuberculosis generally affects the lungs, but can also affect other parts of the body. Most infections do not have symptoms, in which case it is known as latent tuberculosis.');
+
+1 row created.
+
+SQL> insert into symdis values('Common Cold','The common cold, also known simply as a cold, is a viral infectious disease of the upper respiratory tract that primarily affects the nose. The throat, sinuses, and larynx may also be affected.These may include coughing, sore throat, runny nose, sneezing, headache, and fever.');
+
+1 row created.
+
+SQL> insert into symdis values('Pneumonia','Pneumonia is an infection that inflames the air sacs in one or both lungs. The air sacs may fill with fluid or pus (purulent material), causing cough with phlegm or pus, fever, chills, and difficulty breathing. A variety of organisms, including bacteria, viruses and fungi, can cause pneumonia.');
+
+1 row created.
+
+SQL> insert into symdis values('Dimorphic hemmorhoids(piles)','Hemorrhoids (HEM-uh-roids), also called piles, are swollen veins in your anus and lower rectum, similar to varicose veins. Hemorrhoids have a number of causes, although often the cause is unknown. They may result from straining during bowel movements or from the increased pressure on these veins during pregnancy.');
+
+1 row created.
+
+SQL> insert into symdis values('Heartattack','A heart attack occurs when the flow of blood to the heart is blocked. The blockage is most often a buildup of fat, cholesterol and other substances, which form a plaque in the arteries that feed the heart (coronary arteries).The interrupted blood flow can damage or destroy part of the heart muscle.');
+
+1 row created.
+
+SQL> insert into symdis values('Varicoseveins','A vein that has enlarged and twisted, often appearing as a bulging, blue blood vessel that is clearly visible through the skin. Varicose veins are most common in older adults, particularly women, and occur especially on the legs.');
+
+1 row created.
+
+SQL> insert into symdis values('Hypothyroidism','Hypothyroidism, also called underactive thyroid or low thyroid, is a disorder of the endocrine system in which the thyroid gland does not produce enough thyroid hormone. It can cause a number of symptoms, such as poor ability to tolerate cold, a feeling of tiredness, constipation, depression, and weight gain.');
+
+1 row created.
+
+SQL> insert into symdis values('Hypoglycemia','Hypoglycemia is a condition caused by a very low level of blood sugar (glucose), your body main energy source. Hypoglycemia is often related to the treatment of diabetes. However, a variety of conditions many rare  can cause low blood sugar in people without diabetes.');
+
+1 row created.
+
+SQL> insert into symdis values('Osteoarthristis','Osteoarthritis is the most common form of arthritis, affecting millions of people worldwide. It occurs when the protective cartilage on the ends of your bones wears down over time. Although osteoarthritis can damage any joint in your body, the disorder most commonly affects joints in your hands, knees, hips and spine.');
+
+1 row created.
+
+SQL> insert into symdis values('Arthritis','Arthritis is inflammation of one or more of your joints. The main symptoms of arthritis are joint pain and stiffness, which typically worsen with age. The most common types of arthritis are osteoarthritis and rheumatoid arthritis.');
+
+1 row created.
+
+SQL> insert into symdis values('(vertigo) Paroymsal  Positional Vertigo','Benign paroxysmal positional vertigo (BPPV) is a disorder arising from a problem in the inner ear. Symptoms are repeated, brief periods of vertigo with movement, that is, of a spinning sensation upon changes in the position of the head.');
+insert into symdis values('(vertigo) Paroymsal  Positional Vertigo','Benign paroxysmal positional vertigo (BPPV) is a disorder arising from a problem in the inner ear. Symptoms are repeated, brief periods of vertigo with movement, that is, of a spinning sensation upon changes in the position of the head.')
+                          *
+ERROR at line 1:
+ORA-12899: value too large for column "SYSTEM"."SYMDIS"."TOPIC" (actual: 39,
+maximum: 30)
+
+
+SQL> insert into symdis values('Paroymsal Positional Vertigo','Benign paroxysmal positional vertigo (BPPV) is a disorder arising from a problem in the inner ear. Symptoms are repeated, brief periods of vertigo with movement, that is, of a spinning sensation upon changes in the position of the head.');
+
+1 row created.
+
+SQL> insert into symdis values('Acne','Acne, also known as acne vulgaris, is a long-term skin disease that occurs when hair follicles are clogged with dead skin cells and oil from the skin. It is characterized by blackheads or whiteheads, pimples, oily skin, and possible scarring.');
+
+1 row created.
+
+SQL> insert into symdis values('Urinary tract infection','A urinary tract infection (UTI) is an infection in any part of your urinary system - your kidneys, ureters, bladder and urethra.Serious consequences can occur if a UTI spreads to your kidneys. Doctors typically treat urinary tract infections with antibiotics.');
+
+1 row created.
+
+SQL> insert into symdis values('Psoriasis','Psoriasis is a common skin disorder that forms thick, red, bumpy patches covered with silvery scales. They can pop up anywhere, but most appear on the scalp, elbows, knees, and lower back.');
+
+1 row created.
+
+SQL> insert into symdis values('Impetigo','Impetigo (im-puh-TIE-go) is a common and highly contagious skin infection that mainly affects infants and children. Impetigo usually appears as red sores on the face, especially around a child nose and mouth, and on hands and feet. The sores burst and develop honey-colored crusts.');
+
+1 row created.
+
+SQL> commit
+  2  ;
+
+Commit complete.
+
+SQL> insert into symdis values('Hyperthyroidism','Hyperthyroidism (overactive thyroid) occurs when your thyroid gland produces too much of the hormone thyroxine. Hyperthyroidism can accelerate your body's metabolism, causing unintentional weight loss and a rapid or irregular heartbeat.');
+ERROR:
+ORA-01756: quoted string not properly terminated
+
+
+SQL> insert into symdis values('Hyperthyroidism','Hyperthyroidism (overactive thyroid) occurs when your thyroid gland produces too much of the hormone thyroxine. Hyperthyroidism can accelerate your body metabolism, causing unintentional weight loss and a rapid or irregular heartbeat.');
+
+1 row created.
+
+SQL> commit;
+
+Commit complete.
+
+SQL>
