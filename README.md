@@ -31,3 +31,7 @@ System Requirements:
  ----------------------------------------- -------- ----------------------------
  USERNAME                                           VARCHAR2(30)
  PASSWORD                                           VARCHAR2(30)
+
+
++The values for symdis are shown in proj-1.txt and projcon.txt.
++The account table is filled as we click on new account in the main panel during runtime.
